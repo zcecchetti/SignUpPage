@@ -12,12 +12,18 @@
     <div id="container">
         <div id="image">
             <img src="images/remithorelunsplash.jpeg" alt="Goldengate Bridge">
+            <div id="credit">Photo by Rémi Thorel on <a href="https://unsplash.com/">Unsplash</a></div>
+
+            <div id="banner">
+                <img id="audioTransients" src="images/kindpng_1244863.png" alt="Audio Transients">
+                <div id="siteName">SF-EDM</div>
+            </div> 
         </div>
         <div id="signUp">
             <div id="siteInfo">
                 <p>
-                    Create an account to get immediate up-to-date information on
-                    electronic music all around the bay area!
+                    Create an account to stay up-to-date on all electronic music events 
+                    in the bay area! Artists can upload event details and more.
                 </p>
                 <p>Sign up now to get started!</p>
             </div>
@@ -28,7 +34,9 @@
                     <div id="topRow">
                         <div>
                             <label for="firstName">FIRST NAME</label>
-                            <input type="text" id="firstName" name="first_name" required>
+                            <input type="text" id="firstName" name="first_name" required 
+                            oninvalid="this.setCustomValidity('Please enter your first name')"
+                            oninput="this.setCustomValidity('')">
                         </div>
                         <div>
                             <label for="lastName">LAST NAME</label>
