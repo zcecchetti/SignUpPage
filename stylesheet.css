@@ -2,9 +2,10 @@
 
     font-size: 16px;
     font-family: Helvetica, sans-serif;
+    --bg-color: rgb(79, 79, 79); 
 }
 
-body, p, img, label, input, form {
+body, p, img, label, form {
 
     padding: 0;
     margin: 0;
@@ -12,7 +13,7 @@ body, p, img, label, input, form {
 
 body {
 
-    background-color: 	rgb(136,136,136);
+    background-color: 	var(--bg-color);
 }
 
 #container {
@@ -26,6 +27,7 @@ img {
     height: 100vh;
     width: 500px;
     object-fit: cover;
+    box-shadow: -40px 0 25px rgb(89, 89, 89)
 }
 
 #signUp {
@@ -36,11 +38,12 @@ img {
     display: flex;
     flex-direction: column;
     gap: 5vh;
+    box-shadow: 40px 0 25px rgb(89, 89, 89)
 }
 
 #siteInfo {
 
-    height: 20vh;
+    height: 30vh;
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -55,14 +58,71 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
 }
 
-label, input {
+input, button {
 
     display: block;
+    font-family: inherit;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--bg-color);
+    border-radius: 5px;
+    border: 0;
+    outline: 1.5px solid rgb(222, 222, 222);
+    padding:5px;
+}
+
+label {
+
+    font-size: .9rem;
+    color: var(--bg-color);
+    display: block;
+    font-family: inherit;
 }
 
 form > div {
 
     display: flex;
+    gap: 96px;
+    padding: 0 0 24px 0;
+}
+
+#botRow {
+
+    padding: 0;
+}
+
+form {
+
+    margin: 24px;
+}
+
+#userActions {
+
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+    gap: 24px;
+}
+
+button {
+
+    width: 200px;
+    height: 48px;
+    border-radius: 8px;
+    border: 0;
+    background-color: rgba(9,159,186);
+    color: whitesmoke;
+}
+
+button:hover {
+
+    background-color: #0494af;
+}
+
+input:focus {
+
+    outline: 1.5px solid #0494af;
 }
