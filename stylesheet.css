@@ -1,13 +1,18 @@
 :root {
 
     font-size: 16px;
+    font-family: Helvetica, sans-serif;
+}
+
+body, p, img, label, input, form {
+
+    padding: 0;
+    margin: 0;
 }
 
 body {
 
     background-color: 	rgb(136,136,136);
-    padding: 0;
-    margin: 0;
 }
 
 #container {
@@ -21,8 +26,6 @@ img {
     height: 100vh;
     width: 500px;
     object-fit: cover;
-    margin: 0;
-    padding: 0;
 }
 
 #signUp {
@@ -32,12 +35,34 @@ img {
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
+    gap: 5vh;
 }
 
 #siteInfo {
 
-    height: 33vh;
+    height: 20vh;
+    font-size: 1.5rem;
     display: flex;
-    align-items: center;
-    font-size: 2rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 24px;
+    gap: 24px;
+}
+
+#signUpSheet {
+
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label, input {
+
+    display: block;
+}
+
+form > div {
+
+    display: flex;
 }
