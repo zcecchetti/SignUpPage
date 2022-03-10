@@ -179,3 +179,8 @@ a:visited {
     text-decoration: none;
     color: inherit;
 }
+
+botRow:invalid {
+
+    outline: 1.5px solid var(--error-text-color);
+}
